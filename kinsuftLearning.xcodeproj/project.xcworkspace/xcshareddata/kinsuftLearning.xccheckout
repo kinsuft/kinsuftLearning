@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B534BC1E-49E0-4654-BE87-C0470B7B42CA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>kinsuftLearning</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>519F4760-0716-44D9-9119-B3F25543C76C</key>
+		<string>https://github.com/kinsuft/kinsuftLearning.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>kinsuftLearning.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>519F4760-0716-44D9-9119-B3F25543C76C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kinsuft/kinsuftLearning.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>519F4760-0716-44D9-9119-B3F25543C76C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>519F4760-0716-44D9-9119-B3F25543C76C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LJP_L</string>
+		</dict>
+	</array>
+</dict>
+</plist>

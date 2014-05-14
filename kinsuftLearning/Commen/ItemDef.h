@@ -9,9 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "JSONModel.h"
 
+
 @interface ItemDef : JSONModel
 @end
 
+//responseItem
+@interface ResponseItem : JSONModel
+
+@property (nonatomic, assign) NSInteger status;
+@property (nonatomic, strong) NSString<Optional>* messege;
+
+@end
 
 //用户数据项
 @interface UserInfoItem : JSONModel
@@ -29,3 +37,7 @@
 - (id)initWithUserInfoItem:(UserInfoItem*)item;
 
 @end
+
+
+//blockDefine
+typedef void(^ResponseBlock)(BOOL success, ResponseItem* responseItem);

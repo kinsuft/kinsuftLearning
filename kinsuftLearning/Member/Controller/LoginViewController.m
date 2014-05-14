@@ -8,8 +8,15 @@
 
 #import "LoginViewController.h"
 #import "KinsuftCommon.h"
+#import "ItemDef.h"
+#import "UIImageView+WebCache.h"
 
 @interface LoginViewController ()
+
+@property (strong, nonatomic) IBOutlet UIView* bgView;
+@property (strong, nonatomic) IBOutlet UIImageView* doctorHeadPhotoView;
+@property (strong, nonatomic) IBOutlet UITextField* telephoneTextField;
+@property (strong, nonatomic) IBOutlet UITextField* passwordTextField;
 
 @end
 
@@ -29,6 +36,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    DoctorInfoItem* doctor = [KinsuftCommon readUserInfoFromFile];
+    if (doctor != nil ) {
+        [self.doctorHeadPhotoView setImageWithURL:[NSURL URLWithString:doctor.doctorHeadPhoto]];
+    }
+                     
     UIImage* loginViewBackGroundImage;
     if (iPhone5) {
         loginViewBackGroundImage = [UIImage imageNamed:@"background-568"];
@@ -36,8 +48,9 @@
         loginViewBackGroundImage = [UIImage imageNamed:@"background"];
     }
     
-    
     self.view.backgroundColor = [UIColor colorWithPatternImage:loginViewBackGroundImage];
+    self.bgView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"registerContentBg"]];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,5 +74,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)done:(id)sender
+{
+    
+}
 
 @end
